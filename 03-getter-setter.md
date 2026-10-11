@@ -1,5 +1,7 @@
 # Getter, Setter
-
+<p>
+  بطور خلاصه، setter برای تغییر مقدار property و getter برای دریافت مقدار property یک کلاس استفاده میشود.
+</p>
 
 ```php
 class Fruit {
