@@ -1,4 +1,6 @@
 # Getter, Setter
+
+
 ```php
 class Fruit {
   // Properties (Variables)
@@ -16,6 +18,10 @@ class Fruit {
     return $this->name . ' , ' . $this->color;
   }
 }
+
+$fruit = new Fruit;
+$fruit->setDetils('Banana', 'Yellow');
+echo $fruit->getDetails();
 
 ```
 
