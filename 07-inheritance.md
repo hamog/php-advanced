@@ -131,4 +131,4 @@ class Strawberry extends Fruit {
 |
 [فهرست مطالب](README.md)
 |
-[صفحه بعدی: وراثت ➡️](07-inheritance.md)
+[صفحه بعدی: ثابت ها  ➡️](08-constants.md)
