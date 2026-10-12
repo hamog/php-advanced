@@ -1,4 +1,4 @@
-## اصلاح‌کننده‌های دسترسی یا Access Modifiers
+# اصلاح‌کننده‌های دسترسی یا Access Modifiers
 <p>ویژگی‌ها و متدها می‌توانند دارای اصلاح‌کننده‌های دسترسی (یا کلمات کلیدی تعیین‌کننده سطح دسترسی) باشند که تعیین می‌کنند از کجا می‌توان به آن‌ها دسترسی داشت.</p>
 <p>در PHP سه نوع تعیین‌کننده سطح دسترسی (Access Modifier) ​​وجود دارد:</p>
 <p>public - امکان دسترسی به ویژگی یا متد از هر جایی وجود دارد (این حالت پیش‌فرض است).</p>
@@ -8,6 +8,7 @@
 
 ### public
 <p>اصلاح‌گر دسترسی public امکان دسترسی به ویژگی‌ها یا متدهای کلاس را از هر جایی فراهم می‌کند.</p>
+
 ```php
 class Fruit {
   public $name;
@@ -24,6 +25,7 @@ $apple->get_details();
 
 ### private
 <p>اصلاح‌کننده دسترسی private (خصوصی) امکان دسترسی به ویژگی‌ها یا متدهای کلاس را *تنها* در همان کلاسی که در آن تعریف شده‌اند، فراهم می‌کند.</p>
+
 ```php
 class Fruit {
   private $name;
@@ -40,6 +42,7 @@ $apple->get_details();
 
 ### protected
 <p>اصلاح‌گر دسترسی protected امکان دسترسی به ویژگی‌ها یا متدهای کلاس را هم در داخل همان کلاس و هم توسط کلاس‌های مشتق‌شده از آن (کلاس‌های فرزند) فراهم می‌کند.</p>
+
 ```php
 class Fruit {
   protected $name;
@@ -54,6 +57,7 @@ $apple->name = "Apple"; // Error: Cannot access protected property
 $apple->get_details();
 ```
 <p>اما در کلاس فرزند قابل دسترسی است:</p>
+
 ```php
 class Fruit {
   protected $name;
@@ -74,3 +78,10 @@ $apple->setType("Apple");
 //echo $apple->name; // Error: Cannot access protected property
 echo $apple->getType(); // Output: Name: Apple.
 ```
+
+---
+[صفحه قبلی: تعریف متد تخریب کننده ➡️](05-destructor.md)
+|
+[فهرست مطالب](README.md)
+|
+[صفحه بعدی: وراثت ➡️](07-inheritance.md)

@@ -36,4 +36,4 @@ class Fruit {
 |
 [فهرست مطالب](README.md)
 |
-[صفحه بعدی:  تعریف متد با پارامتر ➡️](00-introduction.md)
+[صفحه بعدی:  تعریف متد با پارامتر ➡️](02-method-parameter.md)

@@ -24,12 +24,11 @@ class Fruit {
 $fruit = new Fruit;
 $fruit->setDetils('Banana', 'Yellow');
 echo $fruit->getDetails();
-
 ```
 
 ---
-[صفحه قبلی: تعریف کلاس, پراپرتی و متد ➡️](01-class.md)
+[صفحه قبلی: تعریف متد با پارامتر ➡️](02-method-parameter.md)
 |
 [فهرست مطالب](README.md)
 |
-[صفحه بعدی: ارث‌بری ➡️](00-introduction.md)
+[صفحه بعدی: متد سازنده ➡️](04-constructor.md)
