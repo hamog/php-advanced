@@ -1,4 +1,4 @@
-# اصلاح‌کننده‌های دسترسی یا Access Modifiers
+# سطح دسترسی یا Access Modifiers
 <p>ویژگی‌ها و متدها می‌توانند دارای اصلاح‌کننده‌های دسترسی (یا کلمات کلیدی تعیین‌کننده سطح دسترسی) باشند که تعیین می‌کنند از کجا می‌توان به آن‌ها دسترسی داشت.</p>
 <p>در PHP سه نوع تعیین‌کننده سطح دسترسی (Access Modifier) ​​وجود دارد:</p>
 <p>public - امکان دسترسی به ویژگی یا متد از هر جایی وجود دارد (این حالت پیش‌فرض است).</p>
@@ -13,14 +13,14 @@
 class Fruit {
   public $name;
 
-  public function get_details() {
+  public function getDetails() {
     echo "Name: " . $this->name . ".";
   }
 }
 
 $apple = new Fruit();
 $apple->name = "Apple"; // Can be accessed directly
-$apple->get_details();
+$apple->getDetails();
 ```
 
 ### private
@@ -30,14 +30,14 @@ $apple->get_details();
 class Fruit {
   private $name;
 
-  public function get_details() {
+  public function getDetails() {
     echo "Name: " . $this->name . ".";
   }
 }
 
 $apple = new Fruit();
 $apple->name = "Apple"; // Error: Cannot access private property
-$apple->get_details();
+$apple->getDetails();
 ```
 
 ### protected
@@ -47,14 +47,14 @@ $apple->get_details();
 class Fruit {
   protected $name;
 
-  public function get_details() {
+  public function getDetails() {
     echo "Name: " . $this->name . ".";
   }
 }
 
 $apple = new Fruit();
 $apple->name = "Apple"; // Error: Cannot access protected property
-$apple->get_details();
+$apple->getDetails();
 ```
 <p>اما در کلاس فرزند قابل دسترسی است:</p>
 
