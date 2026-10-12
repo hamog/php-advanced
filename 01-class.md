@@ -17,17 +17,17 @@ class Fruit {
 <p>یک شیء، نمونه‌ای منفرد از یک کلاس است.</p>
 
 ```php
-    $fruit = new Fruit();
-    echo $fruit->name;
-    $fruit->showDescription();
+$fruit = new Fruit();
+echo $fruit->name;
+$fruit->showDescription();
 ```
 
 نکته: هرتعداد شی می توانیم از یک کلاس ایجاد کنیم .
 
 ```php
-    $fruit = new Fruit();
-    $fruit2 = new Fruit();
-    $fruit3 = new Fruit();
+$fruit = new Fruit();
+$fruit2 = new Fruit();
+$fruit3 = new Fruit();
     ...
 ```
 
