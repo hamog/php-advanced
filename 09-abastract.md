@@ -107,8 +107,8 @@ echo $class->prefixName("Jane Doe");
 ### 
 
 ---
-[صفحه قبلی: انتزاع   ➡️](08-constants.md)
+[صفحه قبلی: ثابت ها   ➡️](08-constants.md)
 |
 [فهرست مطالب](README.md)
 |
-[صفحه بعدی: وراثت ➡️](07-inheritance.md)
+[صفحه بعدی: رابط ها ➡️](10-interface.md)
