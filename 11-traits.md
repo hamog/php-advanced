@@ -91,4 +91,4 @@ $obj2->msg2();
 |
 [فهرست مطالب](README.md)
 |
-[صفحه بعدی: وراثت ➡️](07-inheritance.md)
+[صفحه بعدی: static ➡️](12-static.md)

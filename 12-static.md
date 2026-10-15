@@ -102,3 +102,10 @@ echo Circle::$pi;
 $circle = new Circle;
 echo $circle->getPi();
 ```
+
+---
+[صفحه قبلی: traits   ➡️](11-traits.md)
+|
+[فهرست مطالب](README.md)
+|
+[صفحه بعدی: namespace ➡️](12-namespace.md)
