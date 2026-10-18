@@ -95,4 +95,4 @@ $adminUser = new AdminUser();
 |
 [فهرست مطالب](README.md)
 |
-[صفحه بعدی: traits ➡️](14-traits.md)
+[ُType Hinting: ➡️](14-type-hinting.md)
