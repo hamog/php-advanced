@@ -78,4 +78,4 @@ echo $user->age;
 |
 [فهرست مطالب](README.md)
 |
-[صفحه بعدی: traits ➡️](14-traits.md)
+[صفحه بعدی: تزریق وابستگی ➡️](15-dependency-injection.md)
