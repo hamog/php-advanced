@@ -32,7 +32,7 @@ class Customer {
 class Customer
 {
     private $sms;
-    
+
     public function __construct($sms)
     {
         $this->sms = $sms;
@@ -40,7 +40,7 @@ class Customer
 
     public function login()
     {
-        //login user
+        //Send Authentication Code
         $this->sms->send();
         //
     }
