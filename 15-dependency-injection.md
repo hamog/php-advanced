@@ -54,4 +54,4 @@ class Customer
 |
 [فهرست مطالب](README.md)
 |
-[صفحه بعدی: traits ➡️](16-traits.md)
+[صفحه بعدی: autoloading ➡️](16-autoload.md)
