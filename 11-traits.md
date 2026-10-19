@@ -6,7 +6,7 @@
 
 ```php
 // Define a trait
-trait message1 {
+trait Message {
   public function msg1() {
     echo "PHP OOP is fun! ";
   }
@@ -14,7 +14,7 @@ trait message1 {
 
 // Use the trait in a class
 class Welcome {
-  use message1;
+  use Message;
 }
 
 $obj = new Welcome();
@@ -24,12 +24,12 @@ $obj->msg1();
 <p>نکته: اگر کلاس‌های دیگر نیاز به استفاده از تابع `msg1()` دارند، کافی است از trait مربوط به `message1` در آن کلاس‌ها استفاده کنید. این کار باعث کاهش تکرار کد می‌شود، زیرا دیگر نیازی به تعریف مجدد و مکرر همان متد نیست.</p>
 
 ```php
-trait message1 {
+trait Message {
   public function msg1() {
-    echo "PHP OOP is fun! ";
+    echo "PHP OOP is fun!";
   }
   public function msg2() {
-    echo "Traits reduce code duplication! ";
+    echo "Traits reduce code duplication!";
   }
   public function msg3() {
     echo "Hello World!";
@@ -37,11 +37,11 @@ trait message1 {
 }
 
 class Welcome {
-  use message1;
+  use Message;
 }
 
 class Welcome2 {
-  use message1;
+  use Message;
 }
 
 $obj = new Welcome();
@@ -57,24 +57,24 @@ $obj2->msg3();
 ### استفاده از چند trait در یک کلاس
 
 ```php
-trait message1 {
+trait Message1 {
   public function msg1() {
     echo "PHP OOP is fun! ";
   }
 }
 
-trait message2 {
+trait Message2 {
   public function msg2() {
     echo "Traits reduce code duplication!";
   }
 }
 
 class Welcome {
-  use message1;
+  use Message1;
 }
 
 class Welcome2 {
-  use message1, message2;
+  use Message1, Message2;
 }
 
 $obj = new Welcome();
