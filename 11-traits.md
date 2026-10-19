@@ -7,7 +7,7 @@
 ```php
 // Define a trait
 trait Message {
-  public function msg1() {
+  public function msg() {
     echo "PHP OOP is fun! ";
   }
 }
@@ -42,6 +42,10 @@ class Welcome {
 
 class Welcome2 {
   use Message;
+
+  public function sayHello() {
+     $this->msg3();
+  }
 }
 
 $obj = new Welcome();
@@ -51,7 +55,7 @@ echo "<br>";
 $obj2 = new Welcome2();
 $obj2->msg1();
 $obj2->msg2();
-$obj2->msg3();
+$obj2->sayHello();
 ```
 
 ### استفاده از چند trait در یک کلاس
