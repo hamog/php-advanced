@@ -45,6 +45,10 @@ class Customer
         //
     }
 }
+
+$sms = new Sms;
+$customer = new Customer($sms)
+$customer->login();
 ```
 
 
