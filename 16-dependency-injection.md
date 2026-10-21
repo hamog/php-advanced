@@ -54,8 +54,8 @@ $customer->login();
 
 
 ---
-[صفحه قبلی: تعیین کننده نوع   ➡️](14-type-hinting.md)
+[صفحه قبلی: زنجیره متدها   ➡️](15-method-chaining.md)
 |
 [فهرست مطالب](README.md)
 |
-[صفحه بعدی: autoloading ➡️](16-autoload.md)
+[صفحه بعدی: autoloading ➡️](17-autoload.md)

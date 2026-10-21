@@ -78,4 +78,4 @@ echo $user->age;
 |
 [فهرست مطالب](README.md)
 |
-[صفحه بعدی: تزریق وابستگی ➡️](15-dependency-injection.md)
+[صفحه بعدی: زنجیره متدها  ➡️](15-method-chaining.md)
