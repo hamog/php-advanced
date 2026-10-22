@@ -51,6 +51,52 @@ $customer = new Customer($sms)
 $customer->login();
 ```
 
+### یک مثال بهتر با استفاده از interface
+
+```php
+interface Sender {
+    public function send();
+}
+
+class Sms implements Sender {
+    public function send() {
+        echo 'Send Sms';
+    }
+}
+
+class Email implements Sender {
+    public function send() {
+        echo 'Send Email';
+    }
+}
+
+class Customer {
+    private Sender $sender;
+
+    public function __construct(Sender $sender) {
+        $this->sender = $sender;
+    }
+
+    public function login() {
+        //********** */
+
+        $this->sender->send();
+
+        //************ */
+    }
+}
+
+$sms = new Sms;
+$customer = new Customer($sms); 
+$customer->login(); // output: Send Sms
+
+
+echo '<hr />';
+
+$email = new Email;
+$customer = new Customer($email); 
+$customer->login(); // output: Send Email
+```
 
 
 ---
