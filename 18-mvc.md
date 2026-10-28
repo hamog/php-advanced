@@ -1,7 +1,5 @@
 # جزوه آموزشی: آشنایی با الگوی MVC در PHP
 
-این جزوه برای دانشجویانی تهیه شده است که با مفاهیم اولیه PHP آشنا هستند و می‌خواهند با ساختاردهی برنامه‌های وب و معماری MVC آشنا شوند.
-
 ## فهرست مطالب
 
 1. [مقدمه و مفهوم معماری نرم‌افزار](#۱-مقدمه-و-مفهوم-معماری-نرم‌افزار)
@@ -209,6 +207,8 @@ $controller->index();
 این نمونه یک پیاده‌سازی ساده آموزشی است؛ در پروژه‌های بزرگ‌تر، مسیریابی درخواست‌ها، اعتبارسنجی، مدیریت خطا و سایر مسئولیت‌ها نیز باید به‌درستی سازمان‌دهی شوند.
 
 ## ۵. نحوه عملکرد MVC
+
+![image mvc](https://images.openai.com/static-rsc-4/Yd4lmOjktztowKEeUzBKXg7PAFbDHkyu6UcPg-EkiTzOhAhpwXk_UDot7CGeM9lAVleeZLkElcASs24Cu0tWGk2Ql2MZMXACZ1VQQji-iW_AUXnnvMTLvntMA6XTI_vIFb-MpR6KghwrXKU7gghbI2XmZnSuFzEE8_K1jgMjskKIF7-f3DbgF8kwcduqpydE?purpose=fullsize)
 
 برای درک بهتر ارتباط سه بخش، فرض کنید کاربر می‌خواهد فهرست دانشجویان را مشاهده کند.
 
