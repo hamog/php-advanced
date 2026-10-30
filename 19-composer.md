@@ -848,4 +848,5 @@ Composer وابستگی‌های پروژه را نصب می‌کند و فای�
 |
 [فهرست مطالب](README.md)
 |
-<!-- [صفحه بعدی: composer ➡️](19-composer.md) -->
+[صفحه بعدی: htaccess ➡️](20-htaccess.md)
+
