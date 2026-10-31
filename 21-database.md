@@ -242,29 +242,21 @@ private string $password = 'password';
 ```php
 public function __construct()
 {
-    try {
+    parent::__construct(
+        "mysql:host=$this->servername;dbname=$this->dbname",
+        $this->username,
+        $this->password
+    );
 
-        parent::__construct(
-            "mysql:host=$this->servername;dbname=$this->dbname",
-            $this->username,
-            $this->password
-        );
+    $this->setAttribute(
+        PDO::ATTR_ERRMODE,
+        PDO::ERRMODE_EXCEPTION
+    );
 
-        $this->setAttribute(
-            PDO::ATTR_ERRMODE,
-            PDO::ERRMODE_EXCEPTION
-        );
-
-        $this->setAttribute(
-            PDO::ATTR_DEFAULT_FETCH_MODE,
-            PDO::FETCH_ASSOC
-        );
-
-    } catch(PDOException $e) {
-
-        echo "Connection failed: " . $e->getMessage();
-
-    }
+    $this->setAttribute(
+        PDO::ATTR_DEFAULT_FETCH_MODE,
+        PDO::FETCH_ASSOC
+    );
 }
 ```
 
@@ -389,19 +381,21 @@ use Core\Libraries\Database;
 
 require_once __DIR__ . '/core/bootstrap.php';
 
-$db = new Database();
+try {
+    $db = new Database();
 
-$posts = $db->select(
-    'SELECT * FROM posts WHERE id = :id',
-    ['id' => 1]
-);
+    $posts = $db->select(
+        'select * from posts where id = :id', 
+        ['id' => 1]
+    );
 
-foreach ($posts as $post) {
-
-    echo "<p>عنوان: " . $post['title'] . "</p>";
-    echo "<p>متن خبر: " . $post['body'] . "</p>";
-    echo "<p>تاریخ ثبت: " . $post['created_at'] . "</p>";
-
+    foreach ($posts as $post) {
+        echo "<p>عنوان: ". $post['title'] ."</p>";
+        echo "<p>متن خبر: ". $post['body'] ."</p>";
+        echo "<p>تاریخ ثبت: ". $post['created_at'] ."</p>";
+    }
+} catch (Exception $e) {
+    echo $e->getMessage();
 }
 ```
 
@@ -414,6 +408,7 @@ foreach ($posts as $post) {
 خروجی متد select یک آرایه از رکوردهای دریافت‌شده از دیتابیس است.
 
 برای نمایش اطلاعات نیز از foreach استفاده می‌کنیم.
+هنگام استفاده از کلاس از بلاک try catch استفاده کردیم تا بتوانیم خطاهایی که ممکن است رخ دهد را مدیریت کنیم.
 
 ---
 
