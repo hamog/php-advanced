@@ -205,7 +205,6 @@ PDO یک رابط استاندارد برای ارتباط PHP با پایگاه
 namespace Core\Libraries;
 
 use PDO;
-use PDOException;
 
 class Database extends PDO
 {
@@ -394,7 +393,7 @@ try {
         echo "<p>متن خبر: ". $post['body'] ."</p>";
         echo "<p>تاریخ ثبت: ". $post['created_at'] ."</p>";
     }
-} catch (Exception $e) {
+} catch (PDOException $e) {
     echo $e->getMessage();
 }
 ```
@@ -426,7 +425,7 @@ try {
 
 
 ### تمرین
-به کلاس Database متدهای insert, update, delete را هم براساس PDO اضافه کند.
+به کلاس Database متدهای insert, update, delete را هم براساس PDO اضافه کنید و در فایل index.php کوئری های آن را تست کنید.
 
 ---
 [صفحه قبلی: htaccess  ➡️](20-htaccess.md)
