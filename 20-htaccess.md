@@ -292,4 +292,4 @@ RewriteRule ^(.*)$ index.php?url=$1 [QSA,L]
 |
 [فهرست مطالب](README.md)
 |
-<!-- [صفحه بعدی: htaccess ➡️](20-htaccess.md) -->
+[صفحه بعدی: database ➡️](21-database.md)
