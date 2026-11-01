@@ -40,6 +40,11 @@ php-mvc/
 │   │   └── Database.php
 │   │
 │   └── bootstrap.php
+|
+├── config/
+|   └── app.php
+|
+|── public/
 │
 ├── vendor/
 │   └── autoload.php
@@ -78,6 +83,13 @@ php-mvc/
 ```text
 core/Libraries/Database.php
 ```
+
+### پوشه config
+این پوشه شامل همه کانفیگ ها و تنطیمات پرکابرد برنامه است.
+
+### پوشه public
+این پوشه محل قرار دادن فایل های css , js و تصاویر هر چیزی که قرار است به صورت عمومی در سایت نشان داده شود است.
+
 
 ### پوشه vendor
 
