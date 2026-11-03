@@ -339,4 +339,4 @@ Config::get('app_name');
 |
 [فهرست مطالب](README.md)
 |
-<!-- [صفحه بعدی: مدیریت تنظیمات ➡️](22-config.md) -->
+[صفحه بعدی: routing  ➡️](23-routing.md)
