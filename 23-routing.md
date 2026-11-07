@@ -801,4 +801,4 @@ $this->routes = require BASE_DIR . '/routes/web.php';
 |
 [فهرست مطالب](README.md)
 |
-<!-- [صفحه بعدی: routing  ➡️](23-routing.md) -->
+[صفحه بعدی: view  ➡️](24-view.md)
