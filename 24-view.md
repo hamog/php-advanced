@@ -512,4 +512,4 @@ project/
 |
 [فهرست مطالب](README.md)
 |
-<!-- [صفحه بعدی: view  ➡️](24-view.md) -->
+[صفحه بعدی: notification  ➡️](25-notification.md)
