@@ -98,13 +98,15 @@ public function index(): void
 
 ```php
 <script>
+    alertify.set('notifier', 'position', 'top-right')
+
     <?php if (isset($_SESSION['success'])): ?>
-        alertify.success(<?= json_encode($_SESSION['success'], JSON_HEX_TAG | JSON_HEX_APOS | JSON_HEX_QUOT | JSON_HEX_AMP) ?>);
+        alertify.success('<?= $_SESSION['success'] ?>');
         <?php unset($_SESSION['success']); ?>
     <?php endif; ?>
 
     <?php if (isset($_SESSION['error'])): ?>
-        alertify.error(<?= json_encode($_SESSION['error'], JSON_HEX_TAG | JSON_HEX_APOS | JSON_HEX_QUOT | JSON_HEX_AMP) ?>);
+        alertify.error('<?= $_SESSION['error'] ?>');
         <?php unset($_SESSION['error']); ?>
     <?php endif; ?>
 </script>
@@ -119,8 +121,6 @@ public function index(): void
 به این ترتیب پیام‌ها فقط یک بار نمایش داده می‌شوند.
 
 **نکته:** به این روش در برنامه‌نویسی وب، Flash Message گفته می‌شود؛ یعنی پیامی که برای مدت کوتاهی در Session ذخیره شده و فقط یک بار به کاربر نمایش داده می‌شود.
-
-همچنین استفاده از `json_encode()` باعث می‌شود متن پیام به شکل امن و صحیح به JavaScript منتقل شود و کاراکترهایی مانند کوتیشن باعث ایجاد خطا در کد JavaScript نشوند.
 
 ## ۶. راست‌چین کردن پیام‌ها
 
