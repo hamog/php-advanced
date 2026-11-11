@@ -163,6 +163,8 @@ app/Controllers/HomeController.php
 
 namespace App\Controllers;
 
+use Core\Libraries\Controller;
+
 class HomeController extends Controller
 {
     public function index(): void
@@ -210,9 +212,8 @@ app/Controllers/Controller.php
 ```php
 <?php
 
-namespace App\Controllers;
+namespace Core\Libraries;
 
-use Core\Libraries\View;
 
 class Controller
 {
@@ -476,7 +477,6 @@ project/
 │
 ├── app/
 │   ├── Controllers/
-│   │   ├── Controller.php
 │   │   └── HomeController.php
 │   │
 │   └── Views/
