@@ -168,4 +168,4 @@ $this->error('خطایی در ذخیره اطلاعات رخ داده است.');
 |
 [فهرست مطالب](README.md)
 |
-<!-- [صفحه بعدی: notification  ➡️](25-notification.md) -->
+[صفحه بعدی: crud  ➡️](26-crud.md)
