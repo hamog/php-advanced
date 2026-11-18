@@ -1680,4 +1680,4 @@ exit;
 |
 [فهرست مطالب](README.md)
 |
-<!-- [صفحه بعدی: crud  ➡️](26-crud.md) -->
+[صفحه بعدی: multi-layout  ➡️](27-multi-layout.md)
